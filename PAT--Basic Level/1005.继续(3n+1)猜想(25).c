@@ -61,7 +61,7 @@ int main(void)
 				test_d[i] = 3 *test_d[i] + 1;
 			}
 			test_d[i] /= 2;
-			if (test_d[i] != 1)
+			if (test_d[i] != 1 && isin(test_d[i], divide_d) != 1) /* 装入数组前做去重处理 */
 				divide_d[j++] = test_d[i];
 		}
 	}
